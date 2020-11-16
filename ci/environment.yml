@@ -7,7 +7,7 @@ name: proplot-dev
 channels:
   - conda-forge
 dependencies:
-  - python>=3.6
+  - python>=3.9
   - numpy
   - xarray
   - pandas
@@ -17,6 +17,10 @@ dependencies:
   - pandoc
   - ipykernel
   - pip
+  - setuptools
+  - wheel
+  - setuptools_scm
+  - setuptools_scm_git_archive
   - pip:
     - ..
     - flake8
@@ -30,4 +34,5 @@ dependencies:
     - jupytext
     - nbsphinx
     - git+https://github.com/lukelbd/sphinx-automodapi@v0.8.proplot-mods
+    - git+https://github.com/pypa/build.git
     - pyqt5
